@@ -168,6 +168,8 @@ body {
 .promo {
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  
 }
 
 .card {
@@ -175,7 +177,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   padding: 32px;
-  max-width: 570px;
+  min-width: 570px;
   min-height: 380px;
   display: flex;
   flex-direction: column;
@@ -195,6 +197,12 @@ body {
 
 .card-text-light {
   color:#fff;
+}
+
+.card-text-light-minimum {
+   color:#fff;
+   margin-left: 54px;
+   
 }
 
 .card-title {
@@ -236,4 +244,5 @@ body {
   height: 100%;
   z-index: -1;
   object-fit: cover;
+  
 }
