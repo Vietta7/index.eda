@@ -107,7 +107,26 @@ body {
 }
 
 .slide-content {
-  max-width: 400px;
+  max-width: 500px;
+  position: relative;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items:center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
+.swiper {
   position: relative;
 }
 
@@ -149,6 +168,18 @@ body {
 
 .slide-summer {
   background-image: url("../img/summer.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.slide-autumn {
+  background-image: url("../img/autumn.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.slide-vitamin {
+  background-image: url(../img/vitamin.png);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -522,4 +553,70 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .slide {
+    padding: 70px;
+  }
+
+  .delivery-card {
+    width: calc(50% - 30px);
+  }
+
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 560px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search-form {
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15ex;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .tabs-card {
+    max-width: 100%;
+  }
 }
