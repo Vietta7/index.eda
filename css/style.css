@@ -473,11 +473,13 @@ body {
 }
 
 .grey {
-  background: #E5E5E5;
+  background:  #F6F6F6;
+  margin-bottom: 202px;
 }
 
 .section-title {
   margin-top: 100px;
+  padding: 50px;
 }
 
 .Benefits-content {
